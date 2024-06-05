@@ -13,6 +13,7 @@
 }
 
 .table {
+  min-width: 100%;
   border-collapse: collapse;
   border-spacing: 1;
 }
@@ -141,6 +142,7 @@
     grid-column: 4;
     align-self: center;
     justify-self: center;
+    gap: 0.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -167,5 +169,13 @@
     gap: 0.5rem;
     font-size: x-small;
     margin-left: 3rem;
+  }
+  .card-header > img {
+    border-radius: 15px;
+    align-self: center;
+    justify-self: center;
+    flex-grow: 1;
+    max-width: 100%;
+    object-fit: fill;
   }
 }

@@ -14,7 +14,7 @@ function ProductImage({ imageUrl, alt }: ProductImageProps): ReactElement {
       height={300}
       alt={alt ?? 'product image'}
       priority
-      quality={90}
+      quality={100}
     />
   );
 }
