@@ -8,14 +8,16 @@ type ProductImageProps = {
 
 function ProductImage({ imageUrl, alt }: ProductImageProps): ReactElement {
   return (
-    <Image
-      src={imageUrl}
-      width={300}
-      height={300}
-      alt={alt ?? 'product image'}
-      priority
-      quality={100}
-    />
+    <figure>
+      <Image
+        src={imageUrl}
+        width={300}
+        height={300}
+        alt={alt ?? 'product image'}
+        priority
+        quality={100}
+      />
+    </figure>
   );
 }
 

@@ -43,7 +43,7 @@
   flex-direction: column;
   font-family: Gotham, helvetica, arial, sans-serif;
 }
-.card-header > img {
+.card-header > figure {
   align-self: center;
   flex-grow: 1;
   object-fit: fill;
@@ -111,8 +111,7 @@
 
 .description {
   background-color: var(--hemocyanin);
-
-  padding-left: 1rem;
+  padding: 1rem;
 }
 
 .cartBtn {
@@ -170,7 +169,7 @@
     font-size: x-small;
     margin-left: 3rem;
   }
-  .card-header > img {
+  .card-header > figure {
     border-radius: 15px;
     align-self: center;
     justify-self: center;
