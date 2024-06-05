@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './styles/globals.css';
 import MainNav from '../components/mainNav/MainNav';
-import MainFooter from '@/components/mainfooter/MainFooter';
+import MainFooter from '../components/mainFooter/MainFooter';
 import Head from 'next/head';
 
 import { CartProvider } from '@/contexts/CartContext';
