@@ -27,23 +27,23 @@ function ProductSpecifications({
       </caption>
       <tbody>
         <tr>
-          <th scope='row'> Brand</th>
+          <th> Brand</th>
           <td> {brand}</td>
         </tr>
         <tr>
-          <th scope='row'> Item weight</th>
+          <th> Item weight</th>
           <td> {weight}</td>
         </tr>
         <tr>
-          <th scope='row'> Dimensions(cm)</th>
+          <th> Dimensions(cm)</th>
           <td> {`${height} x ${width} x ${length}`}</td>
         </tr>
         <tr>
-          <th scope='row'> Item Model number</th>
+          <th> Item Model number</th>
           <td> {modelCode}</td>
         </tr>
         <tr>
-          <th scope='row'> Color</th>
+          <th> Color</th>
           <td> {color}</td>
         </tr>
       </tbody>
