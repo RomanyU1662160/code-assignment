@@ -8,6 +8,7 @@ import QuantitySelector from './quantitySelector/QuantitySelector';
 import ProductDescription from './description/ProductDescription';
 import styles from './style.module.css';
 import ProductSpecifications from './specifications/ProductSpecifications';
+import AddToCartBtn from './addToCartBtn/AddToCartBtn';
 
 type ProductProps = {
   product: Product;
@@ -49,6 +50,9 @@ function ProductDetails({ product }: ProductProps) {
       setTotalQuantity(totalQuantity - 1);
     }
   };
+  const handleAddToCart = () => {
+    console.log('Added to cart');
+  };
 
   return (
     <main className={styles.productWrapper}>
@@ -65,6 +69,7 @@ function ProductDetails({ product }: ProductProps) {
           handleIncreaseQuantity={handleIncreaseQuantity}
           isDecreaseDisabled={isDecreaseBtnDisabled}
         />
+        <AddToCartBtn handleAddToCart={handleAddToCart} />
       </section>
       <section>
         <ProductDescription description={description} />
