@@ -9,6 +9,7 @@ import ProductDescription from './description/ProductDescription';
 import styles from './style.module.css';
 import ProductSpecifications from './specifications/ProductSpecifications';
 import AddToCartBtn from './addToCartBtn/AddToCartBtn';
+import { useCart } from '@/contexts/CartContext';
 
 type ProductProps = {
   product: Product;
@@ -32,6 +33,7 @@ function ProductDetails({ product }: ProductProps) {
     img_url,
   } = product;
 
+  const { addToCart } = useCart();
   const [totalQuantity, setTotalQuantity] = useState<number>(1);
   const minimumQuantity = 1;
   const isDecreaseBtnDisabled = totalQuantity === minimumQuantity;
@@ -51,7 +53,13 @@ function ProductDetails({ product }: ProductProps) {
     }
   };
   const handleAddToCart = () => {
-    console.log('Added to cart');
+    addToCart({
+      id,
+      name,
+      price,
+      quantity: totalQuantity,
+    });
+    setTotalQuantity(1);
   };
 
   return (
