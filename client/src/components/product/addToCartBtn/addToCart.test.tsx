@@ -1,4 +1,4 @@
-import { screen, render } from '@testing-library/react';
+import { screen, render, fireEvent } from '@testing-library/react';
 import AddToCartBtn from './AddToCartBtn';
 
 const props = {
@@ -17,6 +17,15 @@ describe('AddToCartBtn', () => {
     render(<AddToCartBtn {...props} />);
     const addToCartButton = screen.getByRole('button', { name: 'Add to cart' });
     addToCartButton.click();
+    expect(props.handleAddToCart).toHaveBeenCalled();
+  });
+  it('should call the addToCart function when the enter key is pressed', () => {
+    render(<AddToCartBtn {...props} />);
+    const addToCartButton = screen.getByRole('button', { name: 'Add to cart' });
+
+    addToCartButton.focus();
+    fireEvent.keyDown(addToCartButton, { key: 'Enter' });
+
     expect(props.handleAddToCart).toHaveBeenCalled();
   });
 });
