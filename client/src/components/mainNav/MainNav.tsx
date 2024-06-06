@@ -13,7 +13,7 @@ function MainNav() {
         className={styles.logo}
         src='/octopus-logo.svg'
         alt='Octopus logo'
-        width={100}
+        width={150}
         height={100}
       />
       <div>

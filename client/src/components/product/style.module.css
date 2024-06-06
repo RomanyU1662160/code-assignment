@@ -174,7 +174,7 @@
     align-self: center;
     justify-self: center;
     flex-grow: 1;
-    max-width: 100%;
+    max-width: 90%;
     object-fit: fill;
   }
 }
