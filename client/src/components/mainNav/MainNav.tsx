@@ -12,18 +12,21 @@ function MainNav() {
       <Image
         className={styles.logo}
         src='/octopus-logo.svg'
-        alt='Octopus'
+        alt='Octopus logo'
         width={100}
         height={100}
       />
       <div>
-        <span title='Basket items' className={styles.badge}>
-          {getCartLength()}
-        </span>
+        {getCartLength() > 0 && (
+          <span title='Basket items' className={styles.badge}>
+            {getCartLength()}
+          </span>
+        )}
+
         <Image
           className={styles.basket}
           src='/basket.svg'
-          alt='basket'
+          alt='basket icon'
           width={30}
           height={30}
         />

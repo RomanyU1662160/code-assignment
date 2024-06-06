@@ -8,7 +8,15 @@ type AddToCartBtnProps = {
 function AddToCartBtn({ handleAddToCart }: AddToCartBtnProps) {
   return (
     <div className={styles.row}>
-      <button className={styles.cartBtn} onClick={handleAddToCart}>
+      <button
+        className={styles.cartBtn}
+        onClick={handleAddToCart}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter') {
+            handleAddToCart();
+          }
+        }}
+      >
         Add to cart
       </button>
     </div>
