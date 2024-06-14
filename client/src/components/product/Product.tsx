@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useMemo, useState } from 'react';
-import { Product } from './types';
+
 import ProductImage from './image/ProductImg';
 import ProductTitle from './title/ProductTitle';
 import QuantitySelector from './quantitySelector/QuantitySelector';
@@ -10,6 +10,7 @@ import styles from './style.module.css';
 import ProductSpecifications from './specifications/ProductSpecifications';
 import AddToCartBtn from './addToCartBtn/AddToCartBtn';
 import { useCart } from '@/contexts/CartContext';
+import { Product } from '@/__generated__/graphql';
 
 type ProductProps = {
   product: Product;
