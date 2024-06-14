@@ -1,4 +1,4 @@
-import { Product } from '@/components/product/types';
+import { Product } from '@/__generated__/graphql';
 import { getClient } from './apolloClient';
 import { gql } from '@apollo/client';
 
