@@ -1,7 +1,8 @@
-import { ModelCode, Product } from '@/components/product/types';
+import { Product } from '@/__generated__/graphql';
+import { ModelCode } from '@/components/product/types';
 
 export const mockProduct: Product = {
-  id: 1,
+  id: '1',
   name: 'Energy saving light bulb',
   power: '25W',
   description:
