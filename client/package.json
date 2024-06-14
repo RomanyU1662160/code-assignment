@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@apollo/client": "3.10.4",
-    "@apollo/experimental-nextjs-app-support": "^0.11.0",
+    "@apollo/experimental-nextjs-app-support": "^0.11.2",
     "@graphql-codegen/cli": "5.0.2",
     "@graphql-codegen/client-preset": "4.3.0",
     "@testing-library/jest-dom": "^6.4.5",
