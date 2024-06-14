@@ -1,19 +1,4 @@
-export type Product = {
-  id: number;
-  name: string;
-  power: string;
-  description: string;
-  price: number;
-  quantity: number;
-  brand: Brand;
-  weight: number;
-  height: number;
-  width: number;
-  length: number;
-  model_code: ModelCode;
-  colour: string;
-  img_url: string;
-};
+import { Product } from '@/__generated__/graphql';
 
 type Brand = 'Philips' | 'Sony';
 
